@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		614CC9131F3B02F300EB7DCF /* RxYTPlayerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614CC9091F3B02F300EB7DCF /* RxYTPlayerView.framework */; };
+		614CC9181F3B02F300EB7DCF /* RxYTPlayerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614CC9171F3B02F300EB7DCF /* RxYTPlayerViewTests.swift */; };
+		614CC91A1F3B02F300EB7DCF /* RxYTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 614CC90C1F3B02F300EB7DCF /* RxYTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		614CC9241F3B032B00EB7DCF /* YTPlayerView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614CC9231F3B032B00EB7DCF /* YTPlayerView+Rx.swift */; };
+		614CC9261F3B035100EB7DCF /* RxYTPlayerViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614CC9251F3B035100EB7DCF /* RxYTPlayerViewDelegateProxy.swift */; };
+		77BFF08E922367F92B027D54 /* Pods_RxYTPlayerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F654FC978EE5B2EBBD6FAD /* Pods_RxYTPlayerView.framework */; };
+		8D180BB908A68F6262E58F8B /* Pods_RxYTPlayerViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62BEB7D588C63EA1D4027A9 /* Pods_RxYTPlayerViewTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		614CC9141F3B02F300EB7DCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 614CC9001F3B02F300EB7DCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 614CC9081F3B02F300EB7DCF;
+			remoteInfo = RxYTPlayerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F4CB484724EB86105EEF605 /* Pods-RxYTPlayerViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxYTPlayerViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxYTPlayerViewTests/Pods-RxYTPlayerViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B9B0E6A05D2B39516793FF2 /* Pods-RxYTPlayerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxYTPlayerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxYTPlayerView/Pods-RxYTPlayerView.release.xcconfig"; sourceTree = "<group>"; };
+		614CC9091F3B02F300EB7DCF /* RxYTPlayerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxYTPlayerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		614CC90C1F3B02F300EB7DCF /* RxYTPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxYTPlayerView.h; sourceTree = "<group>"; };
+		614CC90D1F3B02F300EB7DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		614CC9121F3B02F300EB7DCF /* RxYTPlayerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxYTPlayerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		614CC9171F3B02F300EB7DCF /* RxYTPlayerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxYTPlayerViewTests.swift; sourceTree = "<group>"; };
+		614CC9191F3B02F300EB7DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		614CC9231F3B032B00EB7DCF /* YTPlayerView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YTPlayerView+Rx.swift"; sourceTree = "<group>"; };
+		614CC9251F3B035100EB7DCF /* RxYTPlayerViewDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxYTPlayerViewDelegateProxy.swift; sourceTree = "<group>"; };
+		A3F654FC978EE5B2EBBD6FAD /* Pods_RxYTPlayerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxYTPlayerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E394968F6561278BFD7611 /* Pods-RxYTPlayerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxYTPlayerView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxYTPlayerView/Pods-RxYTPlayerView.debug.xcconfig"; sourceTree = "<group>"; };
+		E62BEB7D588C63EA1D4027A9 /* Pods_RxYTPlayerViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxYTPlayerViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7FD782AAFCAB4B2F5411E15 /* Pods-RxYTPlayerViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxYTPlayerViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxYTPlayerViewTests/Pods-RxYTPlayerViewTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		614CC9051F3B02F300EB7DCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BFF08E922367F92B027D54 /* Pods_RxYTPlayerView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		614CC90F1F3B02F300EB7DCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614CC9131F3B02F300EB7DCF /* RxYTPlayerView.framework in Frameworks */,
+				8D180BB908A68F6262E58F8B /* Pods_RxYTPlayerViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		303127EA6924C5F8B5E3AF7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3F654FC978EE5B2EBBD6FAD /* Pods_RxYTPlayerView.framework */,
+				E62BEB7D588C63EA1D4027A9 /* Pods_RxYTPlayerViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		614CC8FF1F3B02F300EB7DCF = {
+			isa = PBXGroup;
+			children = (
+				614CC90B1F3B02F300EB7DCF /* Sources */,
+				614CC9161F3B02F300EB7DCF /* Tests */,
+				614CC90A1F3B02F300EB7DCF /* Products */,
+				D143949C1EB4BC53B171B290 /* Pods */,
+				303127EA6924C5F8B5E3AF7C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		614CC90A1F3B02F300EB7DCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				614CC9091F3B02F300EB7DCF /* RxYTPlayerView.framework */,
+				614CC9121F3B02F300EB7DCF /* RxYTPlayerViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		614CC90B1F3B02F300EB7DCF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				614CC90D1F3B02F300EB7DCF /* Info.plist */,
+				614CC90C1F3B02F300EB7DCF /* RxYTPlayerView.h */,
+				614CC9251F3B035100EB7DCF /* RxYTPlayerViewDelegateProxy.swift */,
+				614CC9231F3B032B00EB7DCF /* YTPlayerView+Rx.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		614CC9161F3B02F300EB7DCF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				614CC9191F3B02F300EB7DCF /* Info.plist */,
+				614CC9171F3B02F300EB7DCF /* RxYTPlayerViewTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D143949C1EB4BC53B171B290 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7E394968F6561278BFD7611 /* Pods-RxYTPlayerView.debug.xcconfig */,
+				3B9B0E6A05D2B39516793FF2 /* Pods-RxYTPlayerView.release.xcconfig */,
+				0F4CB484724EB86105EEF605 /* Pods-RxYTPlayerViewTests.debug.xcconfig */,
+				F7FD782AAFCAB4B2F5411E15 /* Pods-RxYTPlayerViewTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		614CC9061F3B02F300EB7DCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614CC91A1F3B02F300EB7DCF /* RxYTPlayerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		614CC9081F3B02F300EB7DCF /* RxYTPlayerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 614CC91D1F3B02F300EB7DCF /* Build configuration list for PBXNativeTarget "RxYTPlayerView" */;
+			buildPhases = (
+				611CD07337C4D972AB6FC64E /* [CP] Check Pods Manifest.lock */,
+				614CC9041F3B02F300EB7DCF /* Sources */,
+				614CC9051F3B02F300EB7DCF /* Frameworks */,
+				614CC9061F3B02F300EB7DCF /* Headers */,
+				614CC9071F3B02F300EB7DCF /* Resources */,
+				DCBE06E229492CC5864CADF6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxYTPlayerView;
+			productName = RxYTPlayerView;
+			productReference = 614CC9091F3B02F300EB7DCF /* RxYTPlayerView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		614CC9111F3B02F300EB7DCF /* RxYTPlayerViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 614CC9201F3B02F300EB7DCF /* Build configuration list for PBXNativeTarget "RxYTPlayerViewTests" */;
+			buildPhases = (
+				E57D21F77FE2074FAB9AA920 /* [CP] Check Pods Manifest.lock */,
+				614CC90E1F3B02F300EB7DCF /* Sources */,
+				614CC90F1F3B02F300EB7DCF /* Frameworks */,
+				614CC9101F3B02F300EB7DCF /* Resources */,
+				502A23F10BC648C2940F2988 /* [CP] Embed Pods Frameworks */,
+				28B57974B3C3F6638F0BC316 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				614CC9151F3B02F300EB7DCF /* PBXTargetDependency */,
+			);
+			name = RxYTPlayerViewTests;
+			productName = RxYTPlayerViewTests;
+			productReference = 614CC9121F3B02F300EB7DCF /* RxYTPlayerViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		614CC9001F3B02F300EB7DCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Junmo Kim";
+				TargetAttributes = {
+					614CC9081F3B02F300EB7DCF = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					614CC9111F3B02F300EB7DCF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 614CC9031F3B02F300EB7DCF /* Build configuration list for PBXProject "RxYTPlayerView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 614CC8FF1F3B02F300EB7DCF;
+			productRefGroup = 614CC90A1F3B02F300EB7DCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				614CC9081F3B02F300EB7DCF /* RxYTPlayerView */,
+				614CC9111F3B02F300EB7DCF /* RxYTPlayerViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		614CC9071F3B02F300EB7DCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		614CC9101F3B02F300EB7DCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28B57974B3C3F6638F0BC316 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxYTPlayerViewTests/Pods-RxYTPlayerViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		502A23F10BC648C2940F2988 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxYTPlayerViewTests/Pods-RxYTPlayerViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		611CD07337C4D972AB6FC64E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCBE06E229492CC5864CADF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxYTPlayerView/Pods-RxYTPlayerView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E57D21F77FE2074FAB9AA920 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		614CC9041F3B02F300EB7DCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614CC9261F3B035100EB7DCF /* RxYTPlayerViewDelegateProxy.swift in Sources */,
+				614CC9241F3B032B00EB7DCF /* YTPlayerView+Rx.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		614CC90E1F3B02F300EB7DCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614CC9181F3B02F300EB7DCF /* RxYTPlayerViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		614CC9151F3B02F300EB7DCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 614CC9081F3B02F300EB7DCF /* RxYTPlayerView */;
+			targetProxy = 614CC9141F3B02F300EB7DCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		614CC91B1F3B02F300EB7DCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		614CC91C1F3B02F300EB7DCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		614CC91E1F3B02F300EB7DCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E394968F6561278BFD7611 /* Pods-RxYTPlayerView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kim.junmo.RxYTPlayerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		614CC91F1F3B02F300EB7DCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B9B0E6A05D2B39516793FF2 /* Pods-RxYTPlayerView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kim.junmo.RxYTPlayerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		614CC9211F3B02F300EB7DCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F4CB484724EB86105EEF605 /* Pods-RxYTPlayerViewTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kim.junmo.RxYTPlayerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		614CC9221F3B02F300EB7DCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7FD782AAFCAB4B2F5411E15 /* Pods-RxYTPlayerViewTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kim.junmo.RxYTPlayerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		614CC9031F3B02F300EB7DCF /* Build configuration list for PBXProject "RxYTPlayerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614CC91B1F3B02F300EB7DCF /* Debug */,
+				614CC91C1F3B02F300EB7DCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		614CC91D1F3B02F300EB7DCF /* Build configuration list for PBXNativeTarget "RxYTPlayerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614CC91E1F3B02F300EB7DCF /* Debug */,
+				614CC91F1F3B02F300EB7DCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		614CC9201F3B02F300EB7DCF /* Build configuration list for PBXNativeTarget "RxYTPlayerViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614CC9211F3B02F300EB7DCF /* Debug */,
+				614CC9221F3B02F300EB7DCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 614CC9001F3B02F300EB7DCF /* Project object */;
+}
