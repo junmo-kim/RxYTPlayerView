@@ -54,7 +54,11 @@ extension Reactive where Base: YTPlayerView {
     var error: Observable<YTPlayerError> {
         return delegate
             .sentMessage(#selector(YTPlayerViewDelegate.playerView(_:receivedError:)))
-            .map({ $0[1] as? YTPlayerError })
+            .map { arguments -> YTPlayerError? in
+                guard arguments.count >= 2 else { return nil }
+                guard let rawValue = arguments[1] as? Int else { return nil }
+                return YTPlayerError(rawValue: rawValue)
+            }
             .filterNil()
     }
     
