@@ -14,18 +14,18 @@ import RxOptional
 
 extension Reactive where Base: YTPlayerView {
     
-    var delegate: DelegateProxy {
+    public var delegate: DelegateProxy {
         return RxYTPlayerViewDelegateProxy.proxyForObject(base)
     }
     
-    var ready: Observable<Void> {
+    public var ready: Observable<Void> {
         return delegate
             .sentMessage(#selector(YTPlayerViewDelegate.playerViewDidBecomeReady(_:)))
             .map { $0[0] as? YTPlayerView }
             .map { _ in }
     }
     
-    var state: Observable<YTPlayerState> {
+    public var state: Observable<YTPlayerState> {
         let selector = #selector((YTPlayerViewDelegate.playerView(_:didChangeTo:)) as
             ((YTPlayerViewDelegate) -> (YTPlayerView, YTPlayerState) -> Void)?)
         return delegate
@@ -38,7 +38,7 @@ extension Reactive where Base: YTPlayerView {
             .filterNil()
     }
     
-    var quality: Observable<YTPlaybackQuality> {
+    public var quality: Observable<YTPlaybackQuality> {
         let selector = #selector((YTPlayerViewDelegate.playerView(_:didChangeTo:)) as
             ((YTPlayerViewDelegate) -> (YTPlayerView, YTPlaybackQuality) -> Void)?)
         return delegate
@@ -51,7 +51,7 @@ extension Reactive where Base: YTPlayerView {
             .filterNil()
     }
     
-    var error: Observable<YTPlayerError> {
+    public var error: Observable<YTPlayerError> {
         return delegate
             .sentMessage(#selector(YTPlayerViewDelegate.playerView(_:receivedError:)))
             .map { arguments -> YTPlayerError? in
@@ -62,7 +62,7 @@ extension Reactive where Base: YTPlayerView {
             .filterNil()
     }
     
-    var playTime: Observable<CGFloat> {
+    public var playTime: Observable<CGFloat> {
         return delegate
             .sentMessage(#selector(YTPlayerViewDelegate.playerView(_:didPlayTime:)))
             .map({ $0[1] as? CGFloat })
