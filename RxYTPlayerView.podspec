@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RxYTPlayerView"
-  s.version      = "0.2.0-rc.0"
+  s.version      = "0.2.0-rc.1"
   s.summary      = "Rx extension for YTPlayerView (YouTube-Player-iOS-Helper)"
   s.homepage     = "https://github.com/junmo-kim/RxYTPlayerView"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
