@@ -16,7 +16,16 @@ public class RxYTPlayerViewDelegateProxy
     , DelegateProxyType
     , YTPlayerViewDelegate {
     
-    public static func registerKnownImplementations() {}
+    weak private(set) var playerView: YTPlayerView?
+    
+    public init(playerView: ParentObject) {
+        self.playerView = playerView
+        super.init(parentObject: playerView, delegateProxy: RxYTPlayerViewDelegateProxy.self)
+    }
+    
+    public static func registerKnownImplementations() {
+        self.register { RxYTPlayerViewDelegateProxy(playerView: $0) }
+    }
     
     public static func setCurrentDelegate(_ delegate: YTPlayerViewDelegate?, to object: ParentObject) {
         object.delegate = delegate
