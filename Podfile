@@ -7,9 +7,9 @@ target 'RxYTPlayerView' do
 
   # Pods for RxYTPlayerView
   pod 'youtube-ios-player-helper', '~> 0.1.6'
-  pod 'RxSwift', '~> 3.6'
-  pod 'RxCocoa', '~> 3.6'
-  pod 'RxOptional', '~> 3.1'
+  pod 'RxSwift', '~> 4.0.0-rc.0'
+  pod 'RxCocoa', '~> 4.0.0-rc.0'
+  pod 'RxOptional', :git => 'https://github.com/RxSwiftCommunity/RxOptional.git', :branch => 'swift-4.0'
 
   target 'RxYTPlayerViewTests' do
     inherit! :search_paths

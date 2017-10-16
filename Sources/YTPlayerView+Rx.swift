@@ -14,8 +14,8 @@ import RxOptional
 
 extension Reactive where Base: YTPlayerView {
     
-    public var delegate: DelegateProxy {
-        return RxYTPlayerViewDelegateProxy.proxyForObject(base)
+    public var delegate: DelegateProxy<YTPlayerView, YTPlayerViewDelegate> {
+        return RxYTPlayerViewDelegateProxy.proxy(for: base)
     }
     
     public var ready: Observable<Void> {
