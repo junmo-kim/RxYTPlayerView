@@ -11,15 +11,18 @@ import youtube_ios_player_helper
 import RxSwift
 import RxCocoa
 
-class RxYTPlayerViewDelegateProxy: DelegateProxy, DelegateProxyType, YTPlayerViewDelegate {
+public class RxYTPlayerViewDelegateProxy
+    : DelegateProxy<YTPlayerView, YTPlayerViewDelegate>
+    , DelegateProxyType
+    , YTPlayerViewDelegate {
     
-    static func currentDelegateFor(_ object: AnyObject) -> AnyObject? {
-        let playerView = object as! YTPlayerView
-        return playerView.delegate
+    public static func registerKnownImplementations() {}
+    
+    public static func setCurrentDelegate(_ delegate: YTPlayerViewDelegate?, to object: ParentObject) {
+        object.delegate = delegate
     }
     
-    static func setCurrentDelegate(_ delegate: AnyObject?, toObject object: AnyObject) {
-        let playerView = object as! YTPlayerView
-        playerView.delegate = delegate as? YTPlayerViewDelegate
+    public static func currentDelegate(for object: ParentObject) -> YTPlayerViewDelegate? {
+        return object.delegate
     }
 }

@@ -1,24 +1,34 @@
 PODS:
-  - RxCocoa (3.6.1):
-    - RxSwift (~> 3.6)
-  - RxOptional (3.1.3):
-    - RxCocoa
-    - RxSwift
-  - RxSwift (3.6.1)
+  - RxCocoa (4.0.0-rc.0):
+    - RxSwift (~> 4.0.0-rc.0)
+  - RxOptional (3.3.0):
+    - RxCocoa (~> 4.0.0-rc.0)
+    - RxSwift (~> 4.0.0-rc.0)
+  - RxSwift (4.0.0-rc.0)
   - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
-  - RxCocoa (~> 3.6)
-  - RxOptional (~> 3.1)
-  - RxSwift (~> 3.6)
+  - RxCocoa (~> 4.0.0-rc.0)
+  - RxOptional (from `https://github.com/RxSwiftCommunity/RxOptional.git`, branch `swift-4.0`)
+  - RxSwift (~> 4.0.0-rc.0)
   - youtube-ios-player-helper (~> 0.1.6)
 
+EXTERNAL SOURCES:
+  RxOptional:
+    :branch: swift-4.0
+    :git: https://github.com/RxSwiftCommunity/RxOptional.git
+
+CHECKOUT OPTIONS:
+  RxOptional:
+    :commit: c5c0fc3a8108e9b9480a9af13398d51d5ccbbecb
+    :git: https://github.com/RxSwiftCommunity/RxOptional.git
+
 SPEC CHECKSUMS:
-  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
-  RxOptional: b97b59183af80d1e729ac9e51d09a10be668d6a8
-  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  RxCocoa: 62457355be73369670fbdf053a79a491552b64ed
+  RxOptional: 6b067d6db1bd6a12fc8bf57b1703c92809f53843
+  RxSwift: 1dd09ceb11531c39adff4efe23556b1484e16967
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 93a3c4c1a553fd55909b1529384b7e2b8bd70207
+PODFILE CHECKSUM: f40ce074e5287151821730af1d9fa3fe17b71ea2
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
